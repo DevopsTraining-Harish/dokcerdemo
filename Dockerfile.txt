@@ -1,0 +1,8 @@
+FROM 3.9.9-ibm-semeru-11-focal
+RUN apt-get update -y
+WORKDIR /app
+COPY . /app
+RUN cd /app
+CMD ["mvn" "compile"]
+
+
